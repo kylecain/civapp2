@@ -16,14 +16,14 @@ const useStyles = makeStyles({
   },
 });
 
-const Civilization = ({civs, setCivs, setFilteredCivs}) => {
+const Civilization = ({civs, setCivs, setCheckedCivs}) => {
   const classes = useStyles();
   
   const civCheckHandler = (i) => {
     let cArr = [...civs];
     cArr[i].Checked = !cArr[i].Checked;
     setCivs(cArr);
-    setFilteredCivs(civs.filter(civ => civ.Checked === true));
+    setCheckedCivs(civs.filter(civ => civ.Checked === true));
   };
 
   return (

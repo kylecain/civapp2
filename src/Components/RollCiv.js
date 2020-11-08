@@ -29,7 +29,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const RollCiv = ({ civs, filteredCivs, setFilteredCivs }) => {
+const RollCiv = ({ checkedCivs }) => {
   const [randomCiv, setRandomCiv] = useState({});
   const [open, setOpen] = React.useState(false);
 
@@ -39,12 +39,12 @@ const RollCiv = ({ civs, filteredCivs, setFilteredCivs }) => {
   const classes = useStyles();
 
   const buttonHandler = () => {
-    if (filteredCivs.length === 0) {
+    if (checkedCivs.length === 0) {
       alert("bad");
       return;
     }
     const randomElement =
-      filteredCivs[Math.floor(Math.random() * filteredCivs.length)];
+    checkedCivs[Math.floor(Math.random() * checkedCivs.length)];
     setRandomCiv(randomElement);
     setOpen(true);
   };
