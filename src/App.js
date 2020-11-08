@@ -17,7 +17,7 @@ function App() {
   return (
     <Container maxWidth="sm">
       <header>
-        <h1 style={{textAlign: "center"}}>CIV APP 2</h1>
+        <h1 style={{textAlign: "center", fontSize: "xxx-large"}}>Civ App 2</h1>
       </header>
       <Civilization civs={civs} setCivs={setCivs} setFilteredCivs={setFilteredCivs}/>
       <RollCiv civs={civs} filteredCivs={filteredCivs} setFilteredCivs={setFilteredCivs}/>

@@ -44,7 +44,9 @@ const Civilization = ({civs, setCivs, setFilteredCivs}) => {
                     civCheckHandler(i);
                   }}
                   onFocus={(event) => event.stopPropagation()}
-                  control={<Checkbox />}
+                  control={<Checkbox style ={{
+                    color: "#3f51b5",
+                  }}/>}
                   label={civ.Civilization}
                 />
               </AccordionSummary>
