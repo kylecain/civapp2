@@ -44,6 +44,7 @@ const Civilization = ({civs, setCivs, setCheckedCivs}) => {
                     civCheckHandler(i);
                   }}
                   onFocus={(event) => event.stopPropagation()}
+                  checked={civ.Checked}
                   control={<Checkbox style ={{
                     color: "#3f51b5",
                   }}/>}

@@ -44,7 +44,7 @@ const RollCiv = ({ checkedCivs }) => {
       return;
     }
     const randomElement =
-    checkedCivs[Math.floor(Math.random() * checkedCivs.length)];
+      checkedCivs[Math.floor(Math.random() * checkedCivs.length)];
     setRandomCiv(randomElement);
     setOpen(true);
   };
