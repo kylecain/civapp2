@@ -99,6 +99,7 @@ export default function SearchAppBar({
     <div className={classes.root}>
       <AppBar
         position="fixed"
+        color="#121212"
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}

@@ -45,7 +45,7 @@ const Civilization = ({ civs, setCivs, setCheckedCivs }) => {
               control={
                 <Checkbox
                   style={{
-                    color: "#3f51b5",
+                    color: "#BB86FC",
                   }}
                 />
               }

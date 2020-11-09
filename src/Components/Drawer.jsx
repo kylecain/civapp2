@@ -93,6 +93,7 @@ export default function PersistentDrawerLeft({ civs, setCivs, masterCivList }) {
         </div>
         <Divider />
         <p>filters</p>
+        <p>sorting</p>
       </Drawer>
       <main
         className={clsx(classes.content, {
